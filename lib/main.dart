@@ -8,9 +8,8 @@ import 'package:reels/presentation/viewmodels/reels_viewmodel.dart';
 import 'package:reels/presentation/views/reels_screen.dart';
 
 Future<void> main() async {
-  WidgetsFlutterBinding.ensureInitialized();
-
   await dotenv.load(fileName: ".env");
+  WidgetsFlutterBinding.ensureInitialized();
 
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
